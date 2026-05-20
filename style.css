@@ -112,7 +112,6 @@ main {
     box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
-/* CONTACT */
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -162,7 +161,7 @@ footer {
     color: var(--primary);
 }
 
-/* TABLET */
+
 @media (min-width: 768px) {
 
     .about-section {
@@ -175,7 +174,7 @@ footer {
     }
 }
 
-/* DESKTOP */
+
 @media (min-width: 1024px) {
 
     .projects-grid {
