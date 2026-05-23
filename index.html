@@ -3,109 +3,350 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <meta name="description" content="Majid Ali — Computer Science Student & Web Developer. Portfolio showcasing projects in web development, fintech, and software engineering.">
+    <title>Majid Ali | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Majid Ali</h1>
+    <!-- ===== NAVIGATION ===== -->
+    <header id="header">
+        <div class="nav-container">
+            <a href="#" class="logo" aria-label="Home">MA</a>
 
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+            <nav aria-label="Main navigation">
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact" class="nav-cta">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </header>
 
-  
+
+    <!-- ===== HERO ===== -->
+    <section id="hero">
+        <div class="hero-content">
+            <p class="hero-greeting">👋 Hello, I'm</p>
+            <h1 class="hero-name">Majid Ali</h1>
+            <h2 class="hero-title">
+                Computer Science Student
+                <span class="accent">&amp;</span>
+                Web Developer
+            </h2>
+            <p class="hero-desc">
+                Passionate about building clean, efficient web applications and exploring the
+                intersection of software engineering and financial technology.
+            </p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <div class="image-ring">
+                <img src="port.jpg" alt="Photo of Majid Ali">
+            </div>
+        </div>
+    </section>
+
+
     <main>
 
-       
-        <section id="about" class="about-section">
-            <img src="port.jpg" alt="Profile Photo">
+        <!-- ===== ABOUT ===== -->
+        <section id="about">
+            <div class="section-header">
+                <span class="section-label">About Me</span>
+                <h2>Who I Am</h2>
+            </div>
 
-            <div>
-                <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a Computer Science student with a strong interest in web development,
+                        software engineering, and financial technology. I enjoy building projects
+                        that solve real-world problems — from transport systems to trading tools.
+                    </p>
+                    <p>
+                        With two years of hands-on experience in forex trading, I bring an
+                        analytical mindset to every project — combining technical skills with
+                        strategic, data-driven thinking.
+                    </p>
 
-                <p> My name is Majid Ali. I am a Computer Science student
-                    interested in web development, software engineering.
-                </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-num">6+</span>
+                            <span class="stat-label">Projects Built</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-num">2+</span>
+                            <span class="stat-label">Years Trading</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-num">CS</span>
+                            <span class="stat-label">Degree Student</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
+
+        <!-- ===== SKILLS ===== -->
+        <section id="skills" class="dark-section">
+            <div class="section-inner">
+                <div class="section-header">
+                    <span class="section-label">What I Know</span>
+                    <h2>Skills &amp; Technologies</h2>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <span class="skill-icon">🌐</span>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-icon">🎨</span>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-icon">⚡</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-icon">🐍</span>
+                        <span>Python</span>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-icon">⚙️</span>
+                        <span>C</span>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-icon">🔧</span>
+                        <span>C++</span>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-icon">☕</span>
+                        <span>Java</span>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-icon">🍃</span>
+                        <span>Spring Boot</span>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-icon">🗄️</span>
+                        <span>SQL</span>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-icon">📱</span>
+                        <span>Responsive Design</span>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-icon">🔀</span>
+                        <span>Git &amp; GitHub</span>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-icon">📊</span>
+                        <span>FinTech</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ===== PROJECTS ===== -->
         <section id="projects">
-            <h2>Projects</h2>
+            <div class="section-header">
+                <span class="section-label">My Work</span>
+                <h2>Featured Projects</h2>
+            </div>
 
             <div class="projects-grid">
 
                 <article class="project-card">
+                    <div class="project-icon">📈</div>
                     <h3>Trading System</h3>
-                    <p>forrex trader with experience of two years</p>
+                    <p>A forex trading system built on 2+ years of live market experience, incorporating technical analysis and risk management strategies.</p>
+                    <div class="project-tags">
+                        <span>Forex</span>
+                        <span>FinTech</span>
+                        <span>Analysis</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-btn">View Project</a>
+                        <a href="#" class="project-btn project-btn-ghost">GitHub</a>
+                    </div>
                 </article>
 
                 <article class="project-card">
+                    <div class="project-icon">🚌</div>
                     <h3>Bus Fare System</h3>
-                    <p>A QR-based transport payment system using web technologies.</p>
+                    <p>A QR-based transport payment system using modern web technologies for seamless, cashless commuter experiences.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-btn">View Project</a>
+                        <a href="#" class="project-btn project-btn-ghost">GitHub</a>
+                    </div>
                 </article>
 
                 <article class="project-card">
+                    <div class="project-icon">🎵</div>
                     <h3>Music Album Page</h3>
-                    <p>A semantic HTML music album page with responsive design.</p>
+                    <p>A semantic HTML music album page with a fully responsive design and accessible, standards-compliant markup.</p>
+                    <div class="project-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>Responsive</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-btn">View Project</a>
+                        <a href="#" class="project-btn project-btn-ghost">GitHub</a>
+                    </div>
                 </article>
 
                 <article class="project-card">
+                    <div class="project-icon">📓</div>
                     <h3>Trading Journal</h3>
-                    <p>A system for tracking trading performance and psychology.</p>
+                    <p>A system for logging trades, tracking performance metrics, and monitoring trading psychology patterns over time.</p>
+                    <div class="project-tags">
+                        <span>JavaScript</span>
+                        <span>FinTech</span>
+                        <span>Data</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-btn">View Project</a>
+                        <a href="#" class="project-btn project-btn-ghost">GitHub</a>
+                    </div>
                 </article>
 
                 <article class="project-card">
-                    <h3>Welcome to Zanzibr</h3>
-                    <p>A Welcome to Zanzibar is web for tourist</p>
+                    <div class="project-icon">🏝️</div>
+                    <h3>Welcome to Zanzibar</h3>
+                    <p>A tourism website for Zanzibar, showcasing the island's culture, attractions, and travel information for visitors.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Tourism</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-btn">View Project</a>
+                        <a href="#" class="project-btn project-btn-ghost">GitHub</a>
+                    </div>
                 </article>
 
                 <article class="project-card">
+                    <div class="project-icon">✈️</div>
                     <h3>Karibu App</h3>
-                    <p>A web app that provide transaction for tourist</p>
+                    <p>A web application providing seamless transaction and payment solutions for tourists visiting East Africa.</p>
+                    <div class="project-tags">
+                        <span>JavaScript</span>
+                        <span>Web App</span>
+                        <span>FinTech</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-btn">View Project</a>
+                        <a href="#" class="project-btn project-btn-ghost">GitHub</a>
+                    </div>
                 </article>
 
             </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
 
-            <form class="contact-form">
+        <!-- ===== CONTACT ===== -->
+        <section id="contact" class="dark-section">
+            <div class="section-inner">
+                <div class="section-header">
+                    <span class="section-label">Get In Touch</span>
+                    <h2>Contact Me</h2>
+                </div>
 
-                <input type="text" placeholder="Your Name" required>
+                <div class="contact-wrapper">
 
-                <input type="email" placeholder="Your Email" required>
+                    <div class="contact-info">
+                        <p>
+                            Have a project in mind, want to collaborate, or just want to say hi?
+                            Feel free to reach out — I'd love to hear from you.
+                        </p>
+                        <div class="contact-detail">
+                            <span aria-hidden="true">📧</span>
+                            <a href="mailto:majidmohdally@gmail.com">majidmohdally@gmail.com</a>
+                        </div>
+                        <div class="contact-detail">
+                            <span aria-hidden="true">📍</span>
+                            <span>Zanzibar, Tanzania</span>
+                        </div>
+                    </div>
 
-                <textarea placeholder="Your Message"></textarea>
+                    <form class="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message →</button>
+                    </form>
 
-                <button type="submit">Send Message</button>
-
-            </form>
-
-            <p>Email: majidally@gmail.com</p>
+                </div>
+            </div>
         </section>
 
     </main>
 
-    <footer>
-        <p>&copy; 2026 Majid Ali<br>All rights reserved.</p>
 
-        <div class="social-links">
-            <a href="#">GitHub</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">Twitter</a>
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="logo" aria-hidden="true">MA</span>
+                <p>Building things for the web.</p>
+            </div>
+
+            <nav class="footer-links" aria-label="Footer navigation">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="social-links">
+                <a href="#" aria-label="GitHub">GitHub</a>
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                <a href="#" aria-label="Twitter">Twitter</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Majid Ali. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="app.js"></script>
 
+    <script src="app.js"></script>
 </body>
 </html>
