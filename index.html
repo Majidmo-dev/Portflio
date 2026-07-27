@@ -43,9 +43,7 @@
             <p class="hero-greeting">👋 Hello, I'm</p>
             <h1 class="hero-name">Majid Ali</h1>
             <h2 class="hero-title">
-                Computer Science Student
-                <span class="accent">&amp;</span>
-                Web Developer
+                <span id="typewriter"></span><span class="cursor" aria-hidden="true"></span>
             </h2>
             <p class="hero-desc">
                 Passionate about building clean, efficient web applications and exploring the
@@ -69,13 +67,13 @@
 
         <!-- ===== ABOUT ===== -->
         <section id="about">
-            <div class="section-header">
+            <div class="section-header" data-reveal>
                 <span class="section-label">About Me</span>
                 <h2>Who I Am</h2>
             </div>
 
             <div class="about-content">
-                <div class="about-text">
+                <div class="about-text" data-reveal>
                     <p>
                         I'm a Computer Science student with a strong interest in web development,
                         software engineering, and financial technology. I enjoy building projects
@@ -88,15 +86,15 @@
                     </p>
 
                     <div class="about-stats">
-                        <div class="stat">
+                        <div class="stat" data-reveal>
                             <span class="stat-num">6+</span>
                             <span class="stat-label">Projects Built</span>
                         </div>
-                        <div class="stat">
+                        <div class="stat" data-reveal>
                             <span class="stat-num">2+</span>
                             <span class="stat-label">Years Trading</span>
                         </div>
-                        <div class="stat">
+                        <div class="stat" data-reveal>
                             <span class="stat-num">CS</span>
                             <span class="stat-label">Degree Student</span>
                         </div>
@@ -109,7 +107,7 @@
         <!-- ===== SKILLS ===== -->
         <section id="skills" class="dark-section">
             <div class="section-inner">
-                <div class="section-header">
+                <div class="section-header" data-reveal>
                     <span class="section-label">What I Know</span>
                     <h2>Skills &amp; Technologies</h2>
                 </div>
@@ -170,7 +168,7 @@
 
         <!-- ===== PROJECTS ===== -->
         <section id="projects">
-            <div class="section-header">
+            <div class="section-header" data-reveal>
                 <span class="section-label">My Work</span>
                 <h2>Featured Projects</h2>
             </div>
@@ -274,7 +272,7 @@
         <!-- ===== CONTACT ===== -->
         <section id="contact" class="dark-section">
             <div class="section-inner">
-                <div class="section-header">
+                <div class="section-header" data-reveal>
                     <span class="section-label">Get In Touch</span>
                     <h2>Contact Me</h2>
                 </div>
@@ -296,20 +294,24 @@
                         </div>
                     </div>
 
-                    <form class="contact-form" novalidate>
+                    <form class="contact-form" id="contact-form" novalidate>
                         <div class="form-group">
                             <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required autocomplete="name">
+                            <span class="field-error" id="name-error" role="alert"></span>
                         </div>
                         <div class="form-group">
                             <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required autocomplete="email">
+                            <span class="field-error" id="email-error" role="alert"></span>
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
                             <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                            <span class="field-error" id="message-error" role="alert"></span>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-full">Send Message →</button>
+                        <div class="form-status" id="form-status" role="alert" aria-live="polite"></div>
+                        <button type="submit" class="btn btn-primary btn-full" id="submit-btn">Send Message →</button>
                     </form>
 
                 </div>
@@ -346,6 +348,9 @@
         </div>
     </footer>
 
+
+    <!-- Back to top -->
+    <button id="back-to-top" aria-label="Back to top">↑</button>
 
     <script src="app.js"></script>
 </body>
